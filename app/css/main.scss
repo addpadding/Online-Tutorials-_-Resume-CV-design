@@ -151,6 +151,37 @@ body {
                     }
                 }
             }
+
+            // 004
+            .languag {
+
+                // 005
+                ul {
+
+                    // 006
+                    li {
+
+                        // 007
+                        .percent {
+                            position: relative;
+                            width: 100%;
+                            height: 6px;
+                            background-color: #081921;
+                            display: block;
+                            margin-top: 5px;
+
+                            // 002
+                            div {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                background-color: $mainColor;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         // 003
