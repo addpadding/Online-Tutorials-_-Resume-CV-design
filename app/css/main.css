@@ -128,5 +128,71 @@ body .container .right_side {
   background-color: #fff;
   padding: 40px;
 }
+body .container .right_side .about {
+  margin-bottom: 50px;
+}
+body .container .right_side .about:last-child {
+  margin-bottom: 0;
+}
+body .container .right_side .about .title {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+body .container .right_side .about p {
+  color: #333;
+}
+body .container .right_side .about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+body .container .right_side .about .box .year_company {
+  min-width: 150px;
+}
+body .container .right_side .about .box .year_company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+body .container .right_side .about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da8;
+  font-size: 16px;
+}
+body .container .right_side .skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+body .container .right_side .skills .box h4 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 500;
+}
+body .container .right_side .skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #f0f0f0;
+}
+body .container .right_side .skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #03a9f4;
+}
+
+/*
+
+// 001
+fff {}
+
+*/
 
 /*# sourceMappingURL=main.css.map */
