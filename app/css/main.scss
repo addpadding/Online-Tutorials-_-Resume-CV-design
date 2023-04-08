@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+$mainColor: #03a9f4;
+
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    // 002
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        min-height: 1000px;
+        background-color: #fff;
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
+
+        // 003
+        .left_side {
+            position: relative;
+            background-color: #003147;
+            padding: 40px;
+
+            // 004
+            .profile_text {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+                // 005
+                .img_box {
+                    position: relative;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    // 006
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+
+                // 005
+                h2 {
+                    color: #fff;
+                    font-size: 24px;
+                    margin-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: 600;
+                    line-height: 22px;
+
+                    // 006
+                    span {
+                        font-size: 12px;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            // 004
+            .contact_info {
+                padding-top: 40px;
+
+                // 005
+                .title {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin-bottom: 20px;
+                }
+
+                // 005
+                ul {
+                    position: relative;
+
+                    // 006
+                    li {
+                        position: relative;
+                        list-style: none;
+                        margin: 10px 0;
+                        cursor: pointer;
+
+                        // 007
+                        .icon {
+                            display: inline-block;
+                            width: 30px;
+                            font-size: 18px;
+                            color: $mainColor;
+                        }
+
+                        // 007
+                        .text {
+                            color: #fff;
+                            font-weight: 300;
+                        }
+                    }
+
+                }
+            }
+
+            // 004
+            .education {
+
+                // 005
+                ul {
+
+                    // 006
+                    li {
+                        margin-bottom: 15px;
+
+                        // 007
+                        h5 {
+                            color: $mainColor;
+                            font-weight: 500;
+                        }
+
+                        // 007
+                        h4 {
+                            color: #fff;
+                            font-weight: 300;
+
+                            &:nth-child(2) {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // 003
+        .right_side {
+            position: relative;
+            background-color: #fff;
+            padding: 40px;
+        }
+    }
+}
