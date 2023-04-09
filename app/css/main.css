@@ -187,6 +187,21 @@ body .container .right_side .skills .box .percent div {
   height: 100%;
   background-color: #03a9f4;
 }
+body .container .right_side .interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+body .container .right_side .interest ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+body .container .right_side .interest ul li i {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
 
 /*
 
