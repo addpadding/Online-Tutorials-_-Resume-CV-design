@@ -29,6 +29,11 @@ body {
         grid-template-columns: 1fr 2fr;
         box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
 
+        @media (max-width:1000px) {
+            margin: 10px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
         // 003
         .left_side {
             position: relative;
@@ -218,9 +223,17 @@ body {
                     flex-direction: row;
                     margin: 20px 0;
 
+                    @media (max-width: 600px) {
+                        flex-direction: column;
+                    }
+
                     // 006
                     .year_company {
                         min-width: 150px;
+
+                        @media (max-width: 600px) {
+                            margin-bottom: 5px;
+                        }
 
                         // 007
                         h5 {
@@ -253,6 +266,10 @@ body {
                     grid-template-columns: 150px 1fr;
                     justify-content: center;
                     align-items: center;
+
+                    @media (max-width: 600px) {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
 
                     // 006
                     h4 {
@@ -287,6 +304,14 @@ body {
                 ul {
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
+
+                    @media (max-width: 1000px) {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+
+                    @media (max-width: 600px) {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
 
                     // 006
                     li {

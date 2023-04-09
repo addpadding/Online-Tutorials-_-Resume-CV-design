@@ -24,6 +24,12 @@ body .container {
   grid-template-columns: 1fr 2fr;
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 1000px) {
+  body .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 body .container .left_side {
   position: relative;
   background-color: #003147;
@@ -148,8 +154,18 @@ body .container .right_side .about .box {
   flex-direction: row;
   margin: 20px 0;
 }
+@media (max-width: 600px) {
+  body .container .right_side .about .box {
+    flex-direction: column;
+  }
+}
 body .container .right_side .about .box .year_company {
   min-width: 150px;
+}
+@media (max-width: 600px) {
+  body .container .right_side .about .box .year_company {
+    margin-bottom: 5px;
+  }
 }
 body .container .right_side .about .box .year_company h5 {
   text-transform: uppercase;
@@ -168,6 +184,11 @@ body .container .right_side .skills .box {
   grid-template-columns: 150px 1fr;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 600px) {
+  body .container .right_side .skills .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 body .container .right_side .skills .box h4 {
   text-transform: uppercase;
@@ -190,6 +211,16 @@ body .container .right_side .skills .box .percent div {
 body .container .right_side .interest ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1000px) {
+  body .container .right_side .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  body .container .right_side .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 body .container .right_side .interest ul li {
   list-style: none;
