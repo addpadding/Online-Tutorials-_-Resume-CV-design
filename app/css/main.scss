@@ -92,7 +92,7 @@ body {
                 padding-top: 40px;
 
                 // 005
-                .title {
+                h3 {
                     color: #fff;
                     text-transform: uppercase;
                     font-weight: 600;
@@ -131,12 +131,27 @@ body {
 
             // 004
             .education {
+                padding-top: 40px;
+
+                // 005
+                h3 {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin-bottom: 20px;
+                }
 
                 // 005
                 ul {
+                    position: relative;
 
                     // 006
                     li {
+                        position: relative;
+                        list-style: none;
+                        margin: 10px 0;
+                        cursor: pointer;
                         margin-bottom: 15px;
 
                         // 007
@@ -160,12 +175,33 @@ body {
 
             // 004
             .languag {
+                padding-top: 40px;
+
+                // 005
+                h3 {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin-bottom: 20px;
+                }
 
                 // 005
                 ul {
+                    position: relative;
 
                     // 006
                     li {
+                        position: relative;
+                        list-style: none;
+                        margin: 10px 0;
+                        cursor: pointer;
+
+                        // 007
+                        .text {
+                            color: #fff;
+                            font-weight: 300;
+                        }
 
                         // 007
                         .percent {
@@ -200,12 +236,8 @@ body {
             .about {
                 margin-bottom: 50px;
 
-                &:last-child {
-                    margin-bottom: 0;
-                }
-
                 // 005
-                .title {
+                h2 {
                     color: $secondaryColor;
                     text-transform: uppercase;
                     letter-spacing: 1px;
@@ -215,6 +247,19 @@ body {
                 // 005
                 p {
                     color: #333;
+                }
+            }
+
+            // 004
+            .experience {
+                margin-bottom: 50px;
+
+                // 005
+                h2 {
+                    color: $secondaryColor;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
                 }
 
                 // 005
@@ -252,12 +297,26 @@ body {
                             color: #2a7da8;
                             font-size: 16px;
                         }
+
+                        // 007
+                        p {
+                            color: #333;
+                        }
                     }
                 }
             }
 
             // 004
             .skills {
+                margin-bottom: 50px;
+
+                // 005
+                h2 {
+                    color: $secondaryColor;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
 
                 .box {
                     position: relative;
@@ -266,6 +325,7 @@ body {
                     grid-template-columns: 150px 1fr;
                     justify-content: center;
                     align-items: center;
+                    margin: 20px 0;
 
                     @media (max-width: 600px) {
                         grid-template-columns: repeat(1, 1fr);
@@ -301,6 +361,14 @@ body {
             .interest {
 
                 // 005
+                h2 {
+                    color: $secondaryColor;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+
+                // 005
                 ul {
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
@@ -324,7 +392,7 @@ body {
                         i {
                             color: $mainColor;
                             font-size: 18px;
-                            width: 20px;
+                            width: 25px;
                         }
                     }
                 }
